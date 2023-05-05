@@ -212,6 +212,7 @@ footer {
     /* padding: 10px; */
     font-size: 20px;
     text-align: center;
+    /* margin-left: 50px; */
 }
 .email{
     color: #D9D9D9;
@@ -240,4 +241,21 @@ footer ul {
     align-items: center;
     margin-left: 23%;
     margin-right: 23%;
+}
+
+/*~~~~~~~~~~~Mobile Media Query~~~~~~~~~~~~~~~*/
+
+@media only screen and (max-width 600px){
+ .greeting {
+    flex-direction: column;
+ }
+.workGrid {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "work1"
+    "work2"
+    "work3";
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
 }
